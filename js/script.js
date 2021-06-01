@@ -3,6 +3,15 @@ document.addEventListener("DOMContentLoaded", function() {
   fetchData();
 });
 
+const express  = require('express');
+const mongoose = require('mongoose');
+
+const cors     = require('cors');
+
+const app = express()
+
+// y esta otra
+app.use(cors());
 // esta funcion carga la tabla apenas carga la pagina
 // fetch() es el método nativo de los navegadores para hacer peticiones AJAX
 // se usa con promesas ya que es asíncrono
